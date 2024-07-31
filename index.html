@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portofolio - Yanti Nurhayati</title>
+    <link rel="stylesheet" href="style.css" />
+
+    <script
+      src="https://kit.fontawesome.com/93ce107040.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+
+  <body>
+    <div id="header">
+      <div class="container">
+        <nav>
+          <img src="Images/logo-me.png" class="logo" />
+          <ul id="sidemenu">
+            <li><a href="#header">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <i class="fas fa-times" onclick="closemenu()"></i>
+          </ul>
+          <i class="fas fa-bars" onclick="openmenu()"></i>
+        </nav>
+
+        <div class="header-text">
+          <h1>
+            Hi, Iam <span> Yanti Nurhayati </span><br />
+            <div class="typing-container">
+              <p id="typing-text"></p>
+            </div>
+            C# is the cornerstone of modern web development
+          </h1>
+        </div>
+      </div>
+    </div>
+    <!----------about----------->
+
+    <div id="about">
+      <div class="container">
+        <div class="row">
+          <div class="about-col-1">
+            <img src="Images/about-3.jpeg" alt="" />
+          </div>
+          <div class="about-col-2">
+            <h1 class="sub-title">About Me</h1>
+            <p>
+              I am a final semester student of D3 Informatics Management with
+              two years of programming experience. I have mastered several
+              programming languages and frameworks, especially C#. I possess
+              strong skills in both teamwork and independent work. Additionally,
+              I have leadership abilities, communication skills, problem-solving
+              capabilities, and the ability to write code that is effective,
+              efficient, and easy to read. I am highly motivated to learn and
+              develop further.
+            </p>
+            <div class="tab-titles">
+              <p class="tab-links active-link" onclick="opentab('skills')">
+                Skills
+              </p>
+              <p class="tab-links" onclick="opentab('experience')">
+                Experience
+              </p>
+              <p class="tab-links" onclick="opentab('education')">Education</p>
+            </div>
+            <div class="tab-contents active-tab" id="skills">
+              <ul>
+                <li>
+                  <span>Web Development</span><br />
+                  HTML, CSS, JavaScript, Node.js
+                </li>
+                <li>
+                  <span>Programming Languages</span><br />
+                  C, C++, C#, Java, PHP, Java
+                </li>
+                <li>
+                  <span>Frameworks, Libraries, Tools</span><br />
+                  ASP.NET Core, ASP.NET MVC, WinForms, React, Tailwind CSS,
+                  Vite, .NET REST API
+                </li>
+                <li>
+                  <span>Databases, Tools</span><br />
+                  MySQL, SQL Server, SQLyog, XAMPP
+                </li>
+                <li>
+                  <span>Version Control</span><br />
+                  Git, GitHub
+                </li>
+                <li>
+                  <span>IDE, Code Editor</span><br />
+                  Visual Studio, Visual Studio Code
+                </li>
+                <li>
+                  <span>Office Software</span><br />
+                  Microsoft Word, Microsoft Excel, Microsoft Power Point
+                </li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="experience">
+              <ul>
+                <li>
+                  Informatics Management Student Association (October 2022 -
+                  now) <br />
+                  <span>Member</span>
+                </li>
+                <li>
+                  English Training Division (September 2023 - August 2024)
+                  <br />
+                  <span>Coordinator</span>
+                </li>
+                <li>
+                  Internship at BPS Ciamis (October 2021 - November 2021) <br />
+                  <span>Junior Web Developer</span>
+                </li>
+                <li>
+                  Mosque Youth Association (October 2019 - February 2021) <br />
+                  <span>Member</span>
+                </li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="education">
+              <ul>
+                <li>
+                  <span>Pasim National University (2022 - now)</span><br />
+                  D3 Informatics Management - GPA: 3.80
+                </li>
+                <li>
+                  <span>SMK Negeri 1 Kawali (2018 - 2021)</span><br />
+                  Software Engineering - 87.06
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-------------portofolio--------->
+
+    <div id="projects">
+      <div class="container">
+        <h1 class="sub-title">My Projects</h1>
+        <div class="work-list">
+          <!-- Project 1 -->
+          <div class="work">
+            <div class="img-wrapper">
+              <img src="Images/weather.png" alt="Weather Forecast" />
+            </div>
+            <div class="layer">
+              <h3>Weather Forecast</h3>
+              <div class="button-group">
+                <button>HTML</button>
+                <button>CSS</button>
+                <button>JavaScript</button>
+                <button>Visual Studio Code</button>
+                <button>API</button>
+              </div>
+              <p>
+                This project is a weather forecasting application that provides
+                real-time weather information using a public API. The project
+                retrieves and displays current weather data, including
+                temperature, humidity, and weather conditions, for any location
+                around the world.
+              </p>
+              <a href="https://github.com/yantinurhayati21/WeatherWise.git">
+                <i class="fas fa-external-link-alt"></i>
+              </a>
+            </div>
+          </div>
+          <!-- Project 2 -->
+          <div class="work">
+            <div class="img-wrapper">
+              <img src="Images/futsal.png" alt="E-Booking Futsal" />
+            </div>
+            <div class="layer">
+              <h3>E-Booking Futsal</h3>
+              <div class="button-group">
+                <button>C#</button>
+                <button>CSS</button>
+                <button>JavaScript</button>
+                <button>Bootstrap</button>
+                <button>.NET 8</button>
+                <button>ASP.NET Core Web App MVC</button>
+                <button>Visual Studio 2022</button>
+                <button>MySQL</button>
+                <button>SQLyog</button>
+                <button>XAMPP</button>
+              </div>
+              <p>
+                E-Booking Futsal is an online booking system for futsal courts,
+                designed to simplify the reservation process. Users can browse
+                available court times, make and manage bookings, and view their
+                booking history through a web-based interface.
+              </p>
+              <a href="https://github.com/yantinurhayati21/E-BookingFutsal.git">
+                <i class="fas fa-external-link-alt"></i>
+              </a>
+            </div>
+          </div>
+          <!-- Project 3 -->
+          <div class="work">
+            <div class="img-wrapper">
+              <img src="Images/kost.png" alt="Boarding House" />
+            </div>
+            <div class="layer">
+              <h3>Boarding House</h3>
+              <div class="button-group">
+                <button>C#</button>
+                <button>CSS</button>
+                <button>JavaScript</button>
+                <button>.NET 8</button>
+                <button>ASP.NET Core Web App MVC</button>
+                <button>Visual Studio 2022</button>
+                <button>SQL Server</button>
+                <button>SQL Server Management Studio</button>
+              </div>
+              <p>
+                Boarding House is a management system designed to handle the
+                operations of boarding houses. It enables users to track rental
+                payments, manage tenant details, and oversee property management
+                tasks.
+              </p>
+              <a href="https://github.com/yantinurhayati21/BoardingHouse.git">
+                <i class="fas fa-external-link-alt"></i>
+              </a>
+            </div>
+          </div>
+          <!-- Project 4 -->
+          <div class="work">
+            <div class="img-wrapper">
+              <img src="Images/product.png" alt="Product Catalog" />
+            </div>
+            <div class="layer">
+              <h3>Product Catalog</h3>
+              <div class="button-group">
+                <button>C#</button>
+                <button>CSS</button>
+                <button>JavaScript</button>
+                <button>.NET 8</button>
+                <button>ASP.NET Core Web App MVC</button>
+                <button>Visual Studio 2022</button>
+                <button>MySQL</button>
+                <button>SQLyog</button>
+                <button>XAMPP</button>
+              </div>
+              <p>
+                Product Catalog is an application that allows users to view and
+                manage product lists with CRUD features. In addition, users can
+                place product orders.
+              </p>
+              <a href="https://github.com/yantinurhayati21/OnlineShop.git">
+                <i class="fas fa-external-link-alt"></i>
+              </a>
+            </div>
+          </div>
+          <!-- Project 5 -->
+          <div class="work">
+            <div class="img-wrapper">
+              <img src="Images/fullstack-film.png" alt="Movie App" />
+            </div>
+            <div class="layer">
+              <h3>Movie App</h3>
+              <div class="button-group">
+                <button>C#</button>
+                <button>ReactJs</button>
+                <button>Tailwind CSS</button>
+                <button>JavaScript</button>
+                <button>.NET 8</button>
+                <button>.NET REST API</button>
+                <button>Visual Studio Code</button>
+                <button>SQLServer</button>
+                <button>SSMS</button>
+              </div>
+              <p>
+                Movie App is a film management application that facilitates CRUD
+                operations for movies and their reviews. Users can add new
+                movies and reviews, view detailed information, update existing
+                entries, and remove items from the database.
+              </p>
+              <a href="https://github.com/yantinurhayati21/Fullstack-Dasar.git">
+                <i class="fas fa-external-link-alt"></i>
+              </a>
+            </div>
+          </div>
+          <!-- Project 6 -->
+          <div class="work">
+            <div class="img-wrapper">
+              <img src="Images/university.png" alt="Management University" />
+            </div>
+            <div class="layer">
+              <h3>Management University</h3>
+              <div class="button-group">
+                <button>C#</button>
+                <button>.NET 8</button>
+                <button>Windows Form App (.NET Framework)</button>
+                <button>Visual Studio 2022</button>
+                <button>MySQL</button>
+                <button>SQLyog</button>
+                <button>XAMPP</button>
+              </div>
+              <p>
+                This project is a university management system developed using
+                C# and .NET 8, designed to handle various aspects of university
+                administration, including student records, course registration,
+                grading, lecturer payroll, and campus revenue.
+              </p>
+              <a
+                href="https://github.com/yantinurhayati21/ManagementUniversityApplication.git"
+              >
+                <i class="fas fa-external-link-alt"></i>
+              </a>
+            </div>
+          </div>
+          <!-- Project 7 -->
+          <div class="work">
+            <div class="img-wrapper">
+              <img src="Images/calculator-app.png" alt="Calculator App" />
+            </div>
+            <div class="layer">
+              <h3>Calculator App</h3>
+              <div class="button-group">
+                <button>C#</button>
+                <button>.NET 8</button>
+                <button>Windows Form App (.NET Framework)</button>
+                <button>Visual Studio 2022</button>
+              </div>
+              <p>
+                This project is a calculator application developed using C# and
+                .NET 8. It includes basic arithmetic operations and a
+                user-friendly interface.
+              </p>
+              <a href="https://github.com/yantinurhayati21/CalculatorApp.git">
+                <i class="fas fa-external-link-alt"></i>
+              </a>
+            </div>
+          </div>
+          <!-- Project 8 -->
+          <div class="work">
+            <div class="img-wrapper">
+              <img src="Images/fruit.png" alt="Fruity Store" />
+            </div>
+            <div class="layer">
+              <h3>Fruity Store</h3>
+              <div class="button-group">
+                <button>ReactJs</button>
+                <button>JavaScript</button>
+                <button>Tailwind CSS</button>
+                <button>Vite</button>
+                <button>Visual Studio Code</button>
+              </div>
+              <p>
+                Fruity Store is an online application for managing product
+                catalogs with CRUD features. Users can also add items to the
+                shopping cart.
+              </p>
+              <a href="https://github.com/yantinurhayati21/Fruity-Store.git">
+                <i class="fas fa-external-link-alt"></i>
+              </a>
+            </div>
+          </div>
+          <!-- Project 9 -->
+          <div class="work">
+            <div class="img-wrapper">
+              <img src="Images/todolist.png" alt="To-Do List" />
+            </div>
+            <div class="layer">
+              <h3>To-Do List</h3>
+              <div class="button-group">
+                <button>ReactJs</button>
+                <button>JavaScript</button>
+                <button>CSS</button>
+                <button>Visual Studio Code</button>
+              </div>
+              <p>
+                This project is a to-do list application developed using ReactJs
+                and JavaScript. It allows users to add, edit, and delete tasks,
+                as well as categorize them into completed and pending lists.
+              </p>
+              <a href="https://github.com/yantinurhayati21/to-do-list.git">
+                <i class="fas fa-external-link-alt"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--------------------contact------------------>
+    <div id="contact">
+      <div class="container">
+        <div class="row">
+          <div class="contact-left">
+            <h1 class="sub-title">Contact Me</h1>
+            <p><i class="fas fa-envelope"></i> yantinurhayati051@gmail.com</p>
+            <p><i class="fas fa-phone"></i> 085321840790</p>
+            <div class="social-icons">
+              <a href="https://wa.me/6285321840790"
+                ><i class="fab fa-whatsapp"></i
+              ></a>
+              <a href="https://github.com/yantinurhayati21"
+                ><i class="fab fa-github"></i
+              ></a>
+              <a href="https://www.facebook.com/yantinurhayati.nurhayati.96/"
+                ><i class="fab fa-facebook"></i
+              ></a>
+              <a href="https://www.instagram.com/yantinrh.21/"
+                ><i class="fab fa-instagram"></i
+              ></a>
+              <a href="https://www.linkedin.com/in/yanti-nurhayati-6736192a6/"
+                ><i class="fab fa-linkedin"></i
+              ></a>
+            </div>
+          </div>
+          <div class="contact-right">
+            <form>
+              <input type="text" name="Name" placeholder="Your Name" required />
+              <input
+                type="email"
+                name="email"
+                placeholder="Your Email"
+                required
+              />
+              <textarea
+                name="Message"
+                rows="6"
+                placeholder="Your Message"
+              ></textarea>
+              <button type="submit" class="btn btn2">Submit</button>
+            </form>
+          </div>
+        </div>
+      </div>
+      <div class="copyright">
+        <p>Copyright @Yanti. Made with <i class="fas fa-heart"></i> heart</p>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
