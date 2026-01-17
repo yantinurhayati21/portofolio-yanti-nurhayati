@@ -20,7 +20,7 @@ function closemenu() {
   sidemenu.style.right = "-200px";
 }
 
-const texts = ["Junior Web Developer", "C# Developer", "Back-End Developer"];
+const texts = ["Web Developer", "C# Developer", "Back-End Developer", "QA Engineer"];
 let count = 0;
 let index = 0;
 let currentText = '';
